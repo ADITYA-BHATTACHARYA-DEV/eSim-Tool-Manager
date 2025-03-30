@@ -160,6 +160,24 @@ if __name__ == "__main__":
 Save and exit (CTRL+X → Y → Enter).
 
 ---
+
+### **✅ Build the package**
+```bash
+poetry build
+```
+
+### **✅ Install it globally using pipx**
+```bash
+pipx install dist/dev-tool-manager-0.1.0-py3-none-any.whl
+
+```
+
+### **✅ Verify installation:**
+```bash
+dev-tool-manager --help
+
+```
+
 ![_- visual selection (18)](https://github.com/user-attachments/assets/33e99f32-0a8a-4d59-8180-78422d9c93c6)
 
 ## **📌 Usage**
@@ -190,6 +208,10 @@ dev-tool-manager list-tools
 ![Screenshot 2025-03-30 090730](https://github.com/user-attachments/assets/aae3343b-0db6-491a-bfc4-a0ed6d582eac)
 ![Screenshot 2025-03-30 085526](https://github.com/user-attachments/assets/ba256de6-a96f-485f-9b9f-55c2ac99f4b9)
 ![Screenshot 2025-03-30 085511](https://github.com/user-attachments/assets/3a6241ab-1be7-477c-8136-055f47e4063c)
+
+
+
+
 
 ## **📌 License**
 
