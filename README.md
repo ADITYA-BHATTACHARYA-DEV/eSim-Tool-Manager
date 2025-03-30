@@ -1,4 +1,6 @@
 
+
+
 # 🚀 Automated Tool Manager
 
 ## 📌 Overview
@@ -44,34 +46,48 @@ To ensure the smooth functioning of the tool, we need to install some dependenci
 
 ### **1️⃣ Install pipx and Poetry**
 `pipx` is a tool for installing Python CLI applications in isolated environments. `Poetry` is used for dependency management.
-2️⃣ Set Up the Project Directory
 
+```bash
+sudo apt update && sudo apt install pipx -y
+pipx ensurepath
+pipx install poetry
+```
+
+### **2️⃣ Set Up the Project Directory**
 To begin, create a dedicated directory for the tool:
 
+```bash
 mkdir dev-tool-manager && cd dev-tool-manager
+```
 
 Now, initialize a Poetry project inside this directory:
 
+```bash
 poetry init
+```
 
-When prompted, enter dev-tool-manager as the package name.
+When prompted, enter **dev-tool-manager** as the package name.
 
 Accept the default values or customize them as needed.
 
-3️⃣ Install Required Dependencies
-
+### **3️⃣ Install Required Dependencies**
 To ensure smooth execution of the tool, install the necessary Python libraries:
 
+```bash
 poetry add click rich
+```
 
-4️⃣ Create the CLI Script
+### **4️⃣ Create the CLI Script**
+Inside the **dev-tool-manager** directory, create a Python file named **dev_tool_manager.py**:
 
-Inside the dev-tool-manager directory, create a Python file named dev_tool_manager.py:
-
+```bash
 nano dev_tool_manager.py
+```
 
-Then, paste the following Python code:
+Paste the following Python code:
 
+```python
+import os
 import subprocess
 import click
 from rich.console import Console
@@ -79,7 +95,6 @@ from rich.table import Table
 import logging
 
 console = Console()
-
 logging.basicConfig(filename="dev_tool_manager.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 
 TOOLS = {
@@ -137,71 +152,41 @@ cli.add_command(list_tools)
 
 if __name__ == "__main__":
     cli()
+```
 
-Save the file and exit (CTRL+X → Y → Enter).
+Save and exit (CTRL+X → Y → Enter).
 
-5️⃣ Convert the Script into a Package
+---
 
-Rename the script and move it into a package structure:
+## **📌 Usage**
 
-mkdir -p dev_tool_manager
-mv dev_tool_manager.py dev_tool_manager/__main__.py
-touch dev_tool_manager/__init__.py
-
-6️⃣ Configure pyproject.toml
-
-Edit the pyproject.toml file:
-
-nano pyproject.toml
-
-Modify the file as follows:
-
-[tool.poetry]
-name = "dev-tool-manager"
-version = "0.1.0"
-description = "A CLI tool to manage Linux development tools"
-authors = ["Your Name <your.email@example.com>"]
-readme = "README.md"
-packages = [{include = "dev_tool_manager"}]
-
-[tool.poetry.dependencies]
-python = "^3.8"
-click = "^8.1.3"
-rich = "^13.5.2"
-
-[tool.poetry.scripts]
-dev-tool-manager = "dev_tool_manager.__main__:cli"
-
-7️⃣ Build and Install the Package
-
-To build and install the package, use the following commands:
-
-poetry build
-pipx install dist/dev-tool-manager-0.1.0-py3-none-any.whl
-
-Once installed, verify by running:
-
-dev-tool-manager --help
-
-📌 Usage Instructions
-
-✅ Install a Development Tool
-
+### **✅ Install a Development Tool**
+```bash
 dev-tool-manager install gcc
+dev-tool-manager install cmake
+```
 
-✅ Update a Development Tool
-
+### **✅ Update a Development Tool**
+```bash
 dev-tool-manager update git
+dev-tool-manager update python3
+```
 
-✅ List Available Tools
-
+### **✅ List All Available Tools**
+```bash
 dev-tool-manager list-tools
+```
 
-📌 License
+---
 
-This project is licensed under the MIT License.
+## **📌 License**
 
+This project is licensed under the **MIT License**. Feel free to use and modify it!
 
+---
 
+## **👥 Contributors**
+
+- **Your Name** (<your.email@ex
 
 
