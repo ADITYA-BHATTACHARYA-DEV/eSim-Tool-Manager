@@ -240,6 +240,8 @@ dev-tool-manager list-tools
 ![Screenshot 2025-03-30 092135](https://github.com/user-attachments/assets/23d027ba-28a8-41fe-8c90-2d036ec4c427)
 ![Screenshot 2025-03-30 090730](https://github.com/user-attachments/assets/aae3343b-0db6-491a-bfc4-a0ed6d582eac)
 ![Screenshot 2025-03-30 085526](https://github.com/user-attachments/assets/ba256de6-a96f-485f-9b9f-55c2ac99f4b9)
+![Screenshot (572)](https://github.com/user-attachments/assets/c36ac100-e7c0-4a07-82b7-18184b018111)
+
 ![Screenshot 2025-03-30 085511](https://github.com/user-attachments/assets/3a6241ab-1be7-477c-8136-055f47e4063c)
 
 
