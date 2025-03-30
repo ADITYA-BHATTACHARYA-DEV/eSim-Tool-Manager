@@ -178,6 +178,14 @@ dev-tool-manager list-tools
 ```
 
 ---
+![Screenshot 2025-03-30 085420](https://github.com/user-attachments/assets/fb770ce2-835c-406e-9f31-3cb3c3183021)
+
+![Screenshot 2025-03-30 092224](https://github.com/user-attachments/assets/e8eaa903-7b5a-4d98-9a35-94e888e678c6)
+![Screenshot 2025-03-30 092147](https://github.com/user-attachments/assets/a043ec45-1cb9-483d-b8e3-b6b45a1bc35a)
+![Screenshot 2025-03-30 092135](https://github.com/user-attachments/assets/23d027ba-28a8-41fe-8c90-2d036ec4c427)
+![Screenshot 2025-03-30 090730](https://github.com/user-attachments/assets/aae3343b-0db6-491a-bfc4-a0ed6d582eac)
+![Screenshot 2025-03-30 085526](https://github.com/user-attachments/assets/ba256de6-a96f-485f-9b9f-55c2ac99f4b9)
+![Screenshot 2025-03-30 085511](https://github.com/user-attachments/assets/3a6241ab-1be7-477c-8136-055f47e4063c)
 
 ## **📌 License**
 
