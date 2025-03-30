@@ -1,85 +1,82 @@
-📌 Automated Tool Manager
-🔹 Overview
-The Automated Tool Manager is a command-line interface (CLI) tool designed to simplify the installation, updating, and management of essential development tools on Linux-based systems. This tool eliminates the need for users to manually install or update development packages by automating the process using predefined commands.
-
-Developers often need essential tools such as GCC, CMake, Python, Git, Vim, and Make to set up a development environment. Instead of installing each tool separately, this CLI automates the process and ensures that all dependencies are properly installed.
-
-📌 Features and Benefits
-🔧 Key Features
-✔️ Automated Installation → Quickly install essential development tools like gcc, git, cmake, and more.
-✔️ One-Click Updates → Ensure all tools are up to date without manually running multiple commands.
-✔️ List Available Tools → View all supported tools along with their installation commands.
-✔️ User-friendly CLI → Simple commands with color-coded output for better readability.
-✔️ Logging Support → Saves installation and update history for debugging and tracking.
-✔️ Lightweight & Fast → Uses Python’s Click and Rich libraries for quick execution.
-✔️ Easy Integration → Ideal for automated development environment setup in CI/CD pipelines.
-
-📌 Prerequisites
-Before installing and using the Automated Tool Manager, ensure you meet the following system requirements:
-
-🖥 System Requirements
-✅ Operating System: Linux (Ubuntu 20.04+, Debian-based distributions)
-✅ Python Version: Python 3.8+ installed
-✅ User Permissions: Root or sudo privileges for package installation
-
-🔹 Required Dependencies
-The tool requires the following Python libraries for execution:
-
-Poetry → Manages dependencies and project packaging.
-
-Click → Handles command-line interaction.
-
-Rich → Provides better UI output with tables and colored text.
-
-📌 Installation Guide
-Follow these detailed step-by-step instructions to install and set up the Automated Tool Manager.
-
-1️⃣ Install pipx and Poetry
-pipx allows installing Python CLI tools in isolated environments, preventing dependency conflicts.
-Poetry is used for dependency and package management.
-
-Run the following commands to install them:
-
-bash
+📌 README.md - Automated Tool Manager
+markdown
 Copy
 Edit
+# 🚀 Automated Tool Manager
+
+## 📌 Overview
+The **Automated Tool Manager** is a command-line interface (CLI) tool designed to simplify the **installation, updating, and management of essential development tools** on **Linux-based systems**. 
+
+Developers often require tools such as **GCC, CMake, Python, Git, Vim, and Make** to set up a development environment. Instead of installing and managing each tool separately, this CLI automates the process and ensures that all dependencies are properly handled.
+
+## ✅ Features
+- **Automated Installation** – Quickly install essential development tools.
+- **One-Click Updates** – Easily update installed tools.
+- **List Available Tools** – View all supported tools with installation commands.
+- **User-Friendly CLI** – Uses `click` and `rich` for an interactive experience.
+- **Logging Support** – Tracks installation and update history.
+- **Lightweight & Fast** – Minimal overhead for system performance.
+
+---
+
+## 📌 Prerequisites
+Before installing the **Automated Tool Manager**, ensure your system meets the following requirements:
+
+### 🖥 System Requirements
+- **OS**: Linux (Ubuntu 20.04+, Debian-based distributions)
+- **Python**: Python 3.8+
+- **Permissions**: Root or `sudo` access for package installation
+
+### 🔹 Required Dependencies
+- **Poetry** – Dependency and package manager.
+- **Click** – Command-line interface framework.
+- **Rich** – Provides a better UI with tables and colored text.
+
+---
+
+## 📌 Installation Guide
+
+### **1️⃣ Install pipx and Poetry**
+`pipx` installs Python CLI tools in isolated environments. `Poetry` handles dependencies.
+
+```bash
 sudo apt update && sudo apt install pipx -y
 pipx ensurepath
 pipx install poetry
-💡 Note: If you encounter a pipx: command not found error, restart your terminal and try again.
+💡 Tip: If you get a pipx: command not found error, restart your terminal.
 
 2️⃣ Set Up the Project Directory
-Create a directory for the tool and navigate into it:
+Create a directory for the tool:
 
 bash
 Copy
 Edit
 mkdir dev-tool-manager && cd dev-tool-manager
-Now, initialize a new Poetry project:
+Now, initialize a Poetry project:
 
 bash
 Copy
 Edit
 poetry init
-When prompted, enter the package name: dev-tool-manager
+Enter dev-tool-manager as the package name.
 
-Accept default values or customize them as per your needs.
+Accept default values or customize as needed.
 
 3️⃣ Install Required Dependencies
-Install the Click and Rich libraries, which are required for the CLI functionality and output formatting:
+Install click and rich for CLI functionality and output formatting:
 
 bash
 Copy
 Edit
 poetry add click rich
 4️⃣ Create the CLI Script
-Inside the dev-tool-manager directory, create a Python file:
+Inside the project directory, create a Python file:
 
 bash
 Copy
 Edit
 nano dev_tool_manager.py
-Now, add the following Python code:
+Add the following code:
 
 python
 Copy
@@ -159,11 +156,13 @@ mkdir -p dev_tool_manager
 mv dev_tool_manager.py dev_tool_manager/__main__.py
 touch dev_tool_manager/__init__.py
 6️⃣ Configure pyproject.toml
+Edit the pyproject.toml file:
+
 bash
 Copy
 Edit
 nano pyproject.toml
-Modify the file:
+Modify the contents:
 
 toml
 Copy
@@ -191,21 +190,18 @@ poetry build
 pipx install dist/dev-tool-manager-0.1.0-py3-none-any.whl
 dev-tool-manager --help
 📌 Usage
-✅ Install a Development Tool:
-
+✅ Install a Development Tool
 bash
 Copy
 Edit
 dev-tool-manager install gcc
 dev-tool-manager install cmake
-✅ Update a Development Tool:
-
+✅ Update a Development Tool
 bash
 Copy
 Edit
 dev-tool-manager update git
-✅ List Available Tools:
-
+✅ List Available Tools
 bash
 Copy
 Edit
@@ -215,5 +211,37 @@ Issue	Solution
 Command not found	Run pipx install dev-tool-manager again.
 Permission denied	Use sudo before running the command.
 Poetry not found	Run pipx install poetry and retry.
+ModuleNotFoundError: click	Ensure dependencies are installed: poetry add click rich
+📌 Testing
+🔍 Test the CLI Functionality
+Run:
+
+bash
+Copy
+Edit
+dev-tool-manager --help
+It should display the available commands.
+
+🔍 Verify Installation
+Try installing a tool:
+
+bash
+Copy
+Edit
+dev-tool-manager install vim
+Then check:
+
+bash
+Copy
+Edit
+vim --version
 📌 License
-📜 This project is licensed under the MIT License.
+This project is licensed under the MIT License.
+
+🎯 Your CLI tool is now fully functional and ready for deployment! 🚀
+
+markdown
+Copy
+Edit
+
+This README follows **GitHub Markdown format** with **proper headings, bullet points, and code snippets
