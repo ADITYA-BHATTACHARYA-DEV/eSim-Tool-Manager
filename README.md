@@ -3,10 +3,13 @@
 # 🚀 Automated Tool Manager  
 
 ## 📌 Overview  
+The **Automated Tool Manager** is a powerful command-line interface (CLI) application designed to automate the **installation, updating, and management** of essential development tools on **Linux-based systems**. 
+ 
+ Developers often require tools like **GCC, CMake, Python, Git, Vim, and Make** for setting up their development environment. Instead of manually installing and updating each tool separately, this CLI automates the process, ensuring that all necessary dependencies are correctly handled and installed efficiently.
+ 
+ By using this tool, users can **quickly install, update, or list development tools** with simple and easy-to-remember commands. The tool leverages **Python's Click module** for a user-friendly command-line experience and **Rich module** for improved text formatting and table display.
 
-The **Automated Tool Manager** is a **command-line interface (CLI) tool** designed to **automate the installation, updating, and management** of essential development tools on **Linux-based systems**.  
-
-This tool is particularly useful for developers and researchers working with **[eSim](https://esim.fossee.in/)**—an open-source **EDA (Electronic Design Automation) tool** for circuit design, simulation, analysis, and PCB design. eSim seamlessly integrates multiple external tools and libraries, such as **Ngspice, KiCad, OpenModelica, and Scilab**, to offer a complete simulation and design environment. However, **managing these dependencies manually** can be **time-consuming and complex**, requiring frequent updates, compatibility checks, and user-specific configurations.  
+This tool is particularly useful for developers and researchers working with **[eSim](https://esim.fossee.in/)**-an open-source **EDA (Electronic Design Automation) tool** for circuit design, simulation, analysis, and PCB design. eSim seamlessly integrates multiple external tools and libraries, such as **Ngspice, KiCad, OpenModelica, and Scilab**, to offer a complete simulation and design environment. However, **managing these dependencies manually** can be **time-consuming and complex**, requiring frequent updates, compatibility checks, and user-specific configurations.  
 
 ### 🔹 **Why Automated Tool Management?**  
 Manually installing and maintaining external tools for **eSim** (or any development environment) can introduce several challenges:  
