@@ -12,6 +12,7 @@ Developers often require tools like **GCC, CMake, Python, Git, Vim, and Make** f
 By using this tool, users can **quickly install, update, or list development tools** with simple and easy-to-remember commands. The tool leverages **Python's Click module** for a user-friendly command-line experience and **Rich module** for improved text formatting and table display.
 
 ---
+![_- visual selection (19)](https://github.com/user-attachments/assets/bc77894f-0c99-412b-9647-bfa14173ea75)
 
 ## **📌 Features**
 
@@ -46,6 +47,7 @@ To ensure the smooth functioning of the tool, we need to install some dependenci
 
 ### **1️⃣ Install pipx and Poetry**
 `pipx` is a tool for installing Python CLI applications in isolated environments. `Poetry` is used for dependency management.
+![_- visual selection (20)](https://github.com/user-attachments/assets/692b3ef4-8075-4643-9241-633d0ae12ac2)
 
 ```bash
 sudo apt update && sudo apt install pipx -y
@@ -83,6 +85,7 @@ Inside the **dev-tool-manager** directory, create a Python file named **dev_tool
 ```bash
 nano dev_tool_manager.py
 ```
+![_- visual selection (17)](https://github.com/user-attachments/assets/4606cdd7-9e77-4b97-9a3f-cd97d3b68ba4)
 
 Paste the following Python code:
 
@@ -157,6 +160,7 @@ if __name__ == "__main__":
 Save and exit (CTRL+X → Y → Enter).
 
 ---
+![_- visual selection (18)](https://github.com/user-attachments/assets/33e99f32-0a8a-4d59-8180-78422d9c93c6)
 
 ## **📌 Usage**
 
