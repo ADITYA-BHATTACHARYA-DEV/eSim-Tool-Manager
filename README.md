@@ -187,6 +187,6 @@ This project is licensed under the **MIT License**. Feel free to use and modify 
 
 ## **👥 Contributors**
 
-- **Your Name** (<your.email@ex
+- **Aditya Bhattacharya** 
 
 
